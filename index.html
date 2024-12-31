@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./pexels-paul-hudson-443964846-29971616.jpg" class="song-image" alt="" />
+            <h1>Shape of You</h1>
+            <p>Ed Sheeran</p>
+            <audio id="song">
+                <source src="Ed-Sheeran-Shape-of-You.mp3" type="audio/mpeg" />
+            </audio>
+            <input type="range" value="0" id="progress" />
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="controlIcon"></i>
+                </div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/13e22a22dd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
